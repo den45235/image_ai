@@ -10,5 +10,8 @@ detector.loadModel()
 
 list = detector.detectObjectsFromImage(
     input_image=os.path.join(exec_path, "objects.jpg"),
-    output_image_path=os.path.join(exec_path, "new_objects.jpg")
+    output_image_path=os.path.join(exec_path, "new_objects.jpg"),
+    #minimum_percentage_probability=70,
+    #display_percentage_probability=False,
+    #display_object_name=True
 )
